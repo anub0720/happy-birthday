@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.cake {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  background-color: #f9e4b7; /* cake color */
+  border-radius: 50% 50% 0 0;
+}
+
+.plate {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #dea678; /* plate color */
+}
+
+.layer {
+  position: absolute;
+  bottom: calc(20px + 20px); /* height of plate + spacing */
+  width: 100%;
+  height: 20px;
+  background-color: #ffd1a5; /* layer color */
+}
+
+.layer:nth-child(2) {
+  bottom: calc(20px + 20px + 20px); /* height of plate + spacing + layer height */
+}
+
+.layer:nth-child(3) {
+  bottom: calc(20px + 20px + 20px + 20px); /* height of plate + spacing + layer height * 2 */
+}
+
+/* Existing styles for the cake */
+
+.candle {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 50px;
+  background-color: #ffd700; /* candle color */
+  border-radius: 2px;
+}
+
+
+.candlestick {
+  position: absolute;
+  bottom: 20px; /* adjust as needed to position the candlestick */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px; /* width of the candlestick */
+  height: 50px; /* height of the candlestick */
+  background-color: #8b4513; /* candlestick color */
+}
+
+.flame {
+  position: absolute;
+  top: -20px; /* position above the candle */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #ff6600; /* flame color */
+  border-radius: 50%;
+  display: none; /* initially hidden */
+  animation: flameAnimation 1s ease-in-out infinite alternate; /* flame animation */
+}
+
+@keyframes flameAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
