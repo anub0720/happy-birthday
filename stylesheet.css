@@ -1,5 +1,5 @@
 body {
-	/*background-color: #FFDAB9;	*/
+	/*background-color: #000DAB9;	*/
 	background-color: #000;
 	
 	-webkit-transition:background-color linear 5s;
@@ -29,90 +29,90 @@ body.background-after-click {
 
 @-webkit-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #000;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #000;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 }
 @-moz-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #000;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #000;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 }
 
 @-o-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #000;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #000;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 }
 
 @-ms-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #000;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #000;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 }
 
 @keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #000;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #000;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 }
 
@@ -974,6 +974,9 @@ audio {
 
 .bannar {
 	max-width: 100%;
+	position: fixed;
+    top: 0%;
+    left: 50%;
 	-webkit-transform:translate(0px,-500px);
 	-moz-transform:translate(0px,-500px);
 	-o-transform:translate(0px,-500px);
@@ -1094,7 +1097,7 @@ audio {
 	font-family: 'Signika', sans-serif;
 	font-size: 50px;
 	color: #BF4136;
-	text-shadow: 5px 5px 5px #FFF;
+	text-shadow: 5px 5px 5px #000F;
 	display: none;
 }
 #b1,#b11 {
@@ -1279,8 +1282,8 @@ audio {
 	font-family: 'Signika', sans-serif;
 	font-size: 30px;
 	text-transform: uppercase;
-	color: #333333;
-	text-shadow: 2px 2px 2px #FFF;
+	color: #00FFFF;
+	text-shadow: 2px 2px 2px #000F;
 	display: none;
 	font-weight: bold;
 }
@@ -1291,7 +1294,7 @@ audio {
         text-transform: uppercase;
         font-family: 'Signika', sans-serif;
         font-weight: 700;
-        color: #fff;
+        color: #000f;
         background-color: #466baf;
 }
     .btn-primary:hover,
@@ -1299,8 +1302,8 @@ audio {
     .btn-primary:active,
     .btn-primary.active,
     .open .dropdown-toggle.btn-primary {
-        border-color: #fff;
-        color: #fff;
+        border-color: #000f;
+        color: #000f;
         background-color: #466baf;
     }
 

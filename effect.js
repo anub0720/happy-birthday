@@ -44,6 +44,7 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		
 		$('body').addClass('background-after-click');
+		changeBackground();
 		setTimeout(function() {
 			setInterval(changeBackground, 3000);
 		}, 1000); // Adjust the delay as needed
@@ -201,9 +202,9 @@ $('document').ready(function(){
 		var i=0;
 
 		function msgLoop(i) {
-			$("p:nth-child(" + i + ")").fadeOut('slow').delay(800).promise().done(function () {
+			$("p:nth-child(" + i + ")").fadeOut('slow').delay(1000).promise().done(function () {
 				i = i + 1;
-				$("p:nth-child(" + i + ")").fadeIn('slow').delay(1000);
+				$("p:nth-child(" + i + ")").fadeIn('slow').delay(2000);
 				if (i == 50) {
 					$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 						// No cake logic here

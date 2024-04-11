@@ -82,3 +82,14 @@ html {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+#cakeContainer {
+  position: fixed;
+  top: 50%; /* Adjust as needed */
+  right: 0;
+  transform: translateY(-50%);
+}
+#showCakeButton,#lightCandleButton{
+  position:fixed;
+  right:5%;
+  bottom: 5%;
+}
