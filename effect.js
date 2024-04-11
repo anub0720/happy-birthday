@@ -5,9 +5,9 @@ $(window).load(function(){
 $('document').ready(function(){
 		var vw;
 		const images = [
-			{ path: 'image1.jpeg', size: 'cover' },
+			{ path: 'image1.jpeg', size: 'contain' },
             { path: 'image2.jpeg', size: 'contain' },
-            { path: 'image3.jpeg', size: 'cover' },
+            { path: 'image3.jpeg', size: 'contain' },
             { path: 'image4.jpeg', size: 'contain' },
             { path: 'image5.png', size: 'contain' },
             { path: 'image6.png', size: 'contain' },
