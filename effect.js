@@ -44,7 +44,9 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		
 		$('body').addClass('background-after-click');
-		setInterval(changeBackground, 3000);
+		setTimeout(function() {
+			setInterval(changeBackground, 3000);
+		}, 1000); // Adjust the delay as needed
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
