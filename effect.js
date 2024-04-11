@@ -42,8 +42,9 @@ $('document').ready(function(){
 		$('#bulb_green').addClass('bulb-glow-green');
 		$('#bulb_pink').addClass('bulb-glow-pink');
 		$('#bulb_orange').addClass('bulb-glow-orange');
-		setInterval(changeBackground, 3000);
+		
 		$('body').addClass('background-after-click');
+		setInterval(changeBackground, 3000);
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
