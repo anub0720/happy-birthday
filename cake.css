@@ -6,10 +6,14 @@ body {
   margin: 0;
 }
 
+html {
+  font-size: 16px; /* Define the base font size */
+}
+
 .cake {
   position: relative;
-  width: 200px;
-  height: 300px;
+  width: 12.5rem; /* 200px converted to rem */
+  height: 18.75rem; /* 300px converted to rem */
   background-color: #f9e4b7; /* cake color */
   border-radius: 50% 50% 0 0;
 }
@@ -18,57 +22,56 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 20px;
+  height: 1.25rem; /* 20px converted to rem */
   background-color: #dea678; /* plate color */
 }
 
 .layer {
   position: absolute;
-  bottom: calc(20px + 20px); /* height of plate + spacing */
+  bottom: calc(1.25rem + 1.25rem); /* height of plate + spacing */
   width: 100%;
-  height: 20px;
+  height: 1.25rem; /* 20px converted to rem */
   background-color: #ffd1a5; /* layer color */
 }
 
 .layer:nth-child(2) {
-  bottom: calc(20px + 20px + 20px); /* height of plate + spacing + layer height */
+  bottom: calc(1.25rem + 1.25rem + 1.25rem); /* height of plate + spacing + layer height */
 }
 
 .layer:nth-child(3) {
-  bottom: calc(20px + 20px + 20px + 20px); /* height of plate + spacing + layer height * 2 */
+  bottom: calc(1.25rem + 1.25rem + 1.25rem + 1.25rem); /* height of plate + spacing + layer height * 2 */
 }
 
 /* Existing styles for the cake */
 
 .candle {
   position: absolute;
-  top: -50px;
+  top: -3.125rem; /* -50px converted to rem */
   left: 50%;
   transform: translateX(-50%);
-  width: 10px;
-  height: 50px;
+  width: 0.625rem; /* 10px converted to rem */
+  height: 3.125rem; /* 50px converted to rem */
   background-color: #ffd700; /* candle color */
-  border-radius: 2px;
+  border-radius: 0.125rem; /* 2px converted to rem */
 }
-
 
 .candlestick {
   position: absolute;
-  bottom: 20px; /* adjust as needed to position the candlestick */
+  bottom: 1.25rem; /* 20px converted to rem */
   left: 50%;
   transform: translateX(-50%);
-  width: 20px; /* width of the candlestick */
-  height: 50px; /* height of the candlestick */
+  width: 1.25rem; /* 20px converted to rem */
+  height: 3.125rem; /* 50px converted to rem */
   background-color: #8b4513; /* candlestick color */
 }
 
 .flame {
   position: absolute;
-  top: -20px; /* position above the candle */
+  top: -1.25rem; /* -20px converted to rem */
   left: 50%;
   transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
+  width: 1.25rem; /* 20px converted to rem */
+  height: 1.25rem; /* 20px converted to rem */
   background-color: #ff6600; /* flame color */
   border-radius: 50%;
   display: none; /* initially hidden */
