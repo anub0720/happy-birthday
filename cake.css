@@ -10,6 +10,22 @@ html {
   font-size: 16px; /* Define the base font size */
 }
 
+.init-img,
+.fin-img {
+  width: 18rem; /* adjust as needed */
+  height: 12rem; /* adjust as needed */
+}
+
+@media only screen and (max-width: 600px) {
+  .init-img,
+  .fin-img {
+    width: 90vw; /* 90% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 18rem; /* Maximum width */
+    max-height: 12rem; /* Maximum height */
+  }
+}
+
 .cake {
   position: relative;
   width: 8rem; /* Adjusted size for smaller screens */
