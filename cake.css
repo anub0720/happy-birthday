@@ -85,8 +85,8 @@ html {
 
 #cakeContainer {
   position: fixed;
-  top: 50%; /* Adjust as needed */
-  right: 0;
+  bottom: 5% ;/* Adjust as needed */
+  right:2%;
   transform: translateY(-50%);
 }
 

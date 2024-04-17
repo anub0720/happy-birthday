@@ -172,8 +172,8 @@ $('document').ready(function(){
 	   $(this).fadeOut('slow').delay(3000).promise().done(function(){
 		   $('#story').fadeIn('slow');
 	   });
-	   $('.cake').fadeOut('slow');
-	   $('.candle').fadeOut('slow');
+	  
+	   $('.fin-img').fadeOut('slow');
    });
    $('#showCakeButton').click(function() {
     $('#cakeContainer').css('display', 'block');
@@ -184,8 +184,14 @@ $('document').ready(function(){
   
   $('#lightCandleButton').click(function() {
     // Light the candle
-	$('.flame').toggle(); // Show/hide the flame
-    
+	// $('.flame').toggle(); // Show/hide the flame
+    var initImg = document.querySelector('.init-img');
+    var finImg = document.querySelector('.fin-img');
+
+    // Hide the initial image
+    initImg.style.display = 'none';
+    // Show the final image
+    finImg.style.display = 'block';
     // Hide the light candle button
     $(this).fadeOut('slow').delay(500).promise().done(function() {
         // Show the "Happy Birthday" button after hiding the light candle button
