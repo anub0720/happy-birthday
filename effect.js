@@ -11,7 +11,8 @@ $('document').ready(function(){
             { path: 'image4.jpeg', size: 'contain' },
             { path: 'image5.png', size: 'contain' },
             { path: 'image6.png', size: 'contain' },
-            { path: 'image7.png', size: 'contain' }
+            { path: 'image7.png', size: 'contain' },
+			{ path: 'image8.jpeg', size: 'contain' },
 		];
 	
 		let currentIndex = 0;
