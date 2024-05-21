@@ -9,7 +9,7 @@ $('document').ready(function(){
             { path: 'image2.jpeg', size: 'contain' },
             { path: 'image3.jpeg', size: 'contain' },
             { path: 'image4.jpeg', size: 'contain' },
-            
+			{ path: 'image5.png', size: 'contain' },
             { path: 'image6.png', size: 'contain' },
             { path: 'image7.png', size: 'contain' },
 			{ path: 'image8.jpeg', size: 'contain' },
